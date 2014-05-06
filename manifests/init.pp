@@ -16,7 +16,7 @@ class yocto_users (
   $ensure = present
 ) {
   account{
-    'genius':
+    'genius1':
     ensure => 'present',
     password => '$6$wFcm.gmxtLzOG$tTJC6AfJNAX3lCHfgSVqfti59Ee.gxy24qIrf87FhnqQ9CpBlq/QbcEjwYjPrFuwJhL2uVfscEsBWCIq0VWlH.',
     groups => ['sudo'],
