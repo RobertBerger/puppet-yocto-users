@@ -1,0 +1,26 @@
+{
+  "author": "Robert Berger",
+  "checksums": {
+    "Rakefile": "f37e6131fe7de9a49b09d31596f5fbf1",
+    "manifests/init.pp": "746107eb217efa2f8c51f0a84ea9c48a",
+    "Modulefile": "88c3ed880fa010fed4ebf47a4e4ab861",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "tests/init.pp": "74f57ad8732c3c6f10e1bbb03ee18ca3",
+    "spec/spec_helper.rb": "3ea886dd135e120afa31e0aab12e85b0",
+    "README.markdown": "dcc9ca11857d820f980566084bf2ac0f"
+  },
+  "dependencies": [
+    {
+      "name": "torrancew/account",
+      "version_requirement": "0.0.5"
+    }
+  ],
+  "description": "",
+  "license": "GPL v2",
+  "name": "rber-yocto_users",
+  "project_page": "",
+  "source": "",
+  "summary": "",
+  "types": [],
+  "version": "0.1.0"
+}
