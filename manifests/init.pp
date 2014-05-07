@@ -5,6 +5,8 @@
 # Parameters: none
 #
 # Actions: it's a class, which utilizes torrancew-account
+#          * create a user here
+#          * add this user to the sudoers - NOPASSWD
 #
 # Requires: see Modulefile
 #
@@ -15,10 +17,15 @@
 class yocto_users (
   $ensure = present
 ) {
+  include sudo
+  $user1='mumu'
   account{
-    'genius1':
+    $user1:
     ensure => 'present',
     password => '$6$wFcm.gmxtLzOG$tTJC6AfJNAX3lCHfgSVqfti59Ee.gxy24qIrf87FhnqQ9CpBlq/QbcEjwYjPrFuwJhL2uVfscEsBWCIq0VWlH.',
     groups => ['sudo'],
    }
+  sudo::conf { $user1:
+  content => "${user1} ALL=(ALL) NOPASSWD: ALL",
+  }
 }
