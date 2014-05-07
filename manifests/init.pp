@@ -18,7 +18,7 @@ class yocto_users (
   $ensure = present
 ) {
   include sudo
-  $user1='mumu'
+  $user1='genius'
   account{
     $user1:
     ensure => 'present',
