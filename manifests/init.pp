@@ -28,4 +28,5 @@ class yocto_users (
   sudo::conf { $user1:
   content => "${user1} ALL=(ALL) NOPASSWD: ALL",
   }
+
 }

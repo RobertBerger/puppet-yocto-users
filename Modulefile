@@ -1,6 +1,6 @@
 name    'rber-yocto_users'
 version '0.1.0'
-source 'https://github.com/RobertBerger/puppet-yocto-users'
+source 'git://github.com/RobertBerger/puppet-yocto-users.git'
 author 'Robert Berger'
 license 'GPL v2'
 summary 'A puppet class to manage yocto users.'
